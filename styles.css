@@ -1,0 +1,246 @@
+/* Mengatur header tetap di tengah */
+header {
+    background: #155780;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Agar isi header tersebar */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+/* Mengatur navigasi berada di sebelah kanan */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Menempatkan menu di sebelah kanan */
+}
+
+nav ul li {
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+}
+
+nav ul li a i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    font-size: 18px;
+}
+
+
+/* Efek hover pada menu */
+nav ul li a:hover {
+    background-color: #4CAF50; /* Warna latar saat hover */
+    color: #ffffff; /* Warna teks tetap putih */
+}
+
+nav ul li a:focus {
+    outline: 2px solid #ffffff; /* Fokus outline untuk aksesibilitas */
+}
+
+/* Bagian konten utama (main) di bawah header */
+main {
+    padding: 60px 20px 20px; /* Menambah padding atas agar tidak tertutup header */
+    background: #ffffff;
+}
+
+/* Seksi-seksi konten agar lebih teratur */
+.sekats {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur agar kotak bisa turun jika ruang tidak cukup */
+    justify-content: space-between;
+    gap: 20px; /* Jarak antar elemen lebih besar */
+    margin-top: 20px; /* Tambahan margin untuk jarak antara menu dan konten */
+}
+
+.sekat {
+    flex: 1; /* Setiap sekat memiliki lebar yang sama */
+    margin: 10px; /* Jarak antara sekat */
+    padding: 20px;
+    background-size: cover; /* Menutupi seluruh area sekat */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    border-radius: 5px;
+    color: #ffffff; /* Mengubah warna teks agar terlihat di atas gambar */
+    text-align: center; /* Mengatur teks di dalam sekat agar rata tengah */
+    width: 100%; /* Lebar penuh */
+    max-width: 600px; /* Maksimal lebar sekat */
+    height: 200px; /* Tinggi sekat, Anda bisa mengubah nilai ini */
+}
+
+
+.sekat-materi {
+    background-image: url('pendidikan.jpg'); /* Ganti dengan gambar latar belakang untuk Materi */
+}
+
+.sekat-latihan {
+    background-image: url('pendidikan.jpg'); /* Ganti dengan gambar latar belakang untuk Latihan */
+}
+
+
+.sekat:hover {
+    transform: translateY(-5px); /* Efek hover mengangkat kotak */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Membesarkan bayangan saat hover */
+}
+
+.sekat a {
+    text-decoration: none;
+    color: #35424a;
+}
+
+.sekat a:hover {
+    color: #4CAF50; /* Warna teks saat hover */
+}
+
+/* CSS khusus untuk halaman materi */
+.materi-sekats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.materi-sekat {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 48%; /* Setiap sekat mengambil 48% lebar halaman */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.materi-sekats h2 {
+    text-align: center;
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+.materi-sekats h3, .materi-sekats h4 {
+    color: #35424a;
+    margin-bottom: 10px;
+}
+
+.materi-sekats p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+ul.materi-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul.materi-list li {
+    margin-bottom: 10px;
+}
+
+.materi-sekats strong {
+    font-weight: bold;
+    color: #35424a;
+}
+
+
+
+.social-media {
+    text-align: center;
+    margin: 20px 0; /* Menambahkan margin atas dan bawah */
+    padding: 20px;
+    background: #f4f4f4; /* Warna latar belakang untuk bagian media sosial */
+    border-radius: 10px; /* Memberikan sudut yang lebih halus */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0; /* Menambahkan margin atas dan bawah */
+    padding: 20px;
+    background: #f4f4f4; /* Warna latar belakang untuk bagian media sosial */
+    border-radius: 10px; /* Memberikan sudut yang lebih halus */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.social-media h3 {
+    color: #35424a; /* Warna judul */
+    margin-bottom: 15px; /* Jarak antara judul dan daftar */
+}
+
+.social-media ul {
+    list-style: none; /* Menghilangkan bullet list */
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block; /* Menampilkan item secara horizontal */
+    margin: 0 15px; /* Jarak antar item */
+}
+
+.social-media ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #35424a; /* Warna teks untuk tautan */
+    font-weight: bold; /* Menebalkan teks tautan */
+    font-size: 18px; /* Ukuran font yang lebih besar */
+    transition: color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.social-media ul li a i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    font-size: 24px; /* Ukuran ikon */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+
+.social-media ul li a:hover {
+    color: #1e90ff; /* Ubah warna saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Footer tetap di bawah */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #155780;
+    color: #ffffff;
+    position: relative;
+    bottom: -40px;
+    width: 100%;
+}
+
+.footer-social-media ul {
+    list-style: none; /* Menghilangkan bullet list */
+    padding: 0;
+    margin: 10px 0; /* Jarak atas dan bawah dari ikon */
+}
+
+.footer-social-media ul li {
+    display: inline-block; /* Menampilkan item secara horizontal */
+    margin: 0 10px; /* Jarak antar ikon */
+}
+
+.footer-social-media ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #ffffff; /* Warna teks untuk tautan */
+    font-size: 18px; /* Ukuran font yang lebih besar */
+    transition: color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.footer-social-media ul li a i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    font-size: 24px; /* Ukuran ikon */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+
+.footer-social-media ul li a:hover {
+    color: #1e90ff; /* Ubah warna saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.no-footer footer {
+    display: none; /* Menyembunyikan footer pada halaman dengan kelas no-footer */
+}
+
